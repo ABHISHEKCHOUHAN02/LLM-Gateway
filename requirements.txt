@@ -1,0 +1,28 @@
+# Phase 1: API server
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+
+# Provider adapters and the OpenAI-compatible example client (Phases 2–3)
+google-genai
+groq
+openai
+httpx
+
+# Configuration and persistence for gateway keys/tenants (Phase 4)
+pydantic-settings
+sqlalchemy
+alembic
+aiosqlite
+asyncpg
+
+# Exact and semantic caching (Phases 5–6)
+redis
+pgvector
+fastembed
+
+# Retries, fallback, and Prometheus observability (Phases 7–8)
+tenacity
+prometheus-fastapi-instrumentator
+
+# Benchmark reporting
+pandas
